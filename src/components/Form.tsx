@@ -33,7 +33,6 @@ export default function Form({fetchWeather} : FormProps) {
         }, 2000);
         return
       }
-      
       fetchWeather()
     }
   return (
@@ -94,7 +93,6 @@ export default function Form({fetchWeather} : FormProps) {
         >
           Consultar CLima
         </button>
-
       </form>
     </>
   )
