@@ -47,7 +47,7 @@ export default function Form({fetchWeather} : FormProps) {
         <div className='flex bg-slate-950 bg-opacity-75 py-3 px-2 rounded-full gap-2'>
           <img src={searchs} alt="search.jpg" />
           <input
-            className=' bg-slate-950 bg-opacity-5 w-full text-white'
+            className='bg-slate-950 rounded-lg bg-opacity-5 w-full text-white'
             type="text"
             name="city"
             id="city"
