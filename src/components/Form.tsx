@@ -6,7 +6,7 @@ import { ChangeEvent } from 'react'
 import Alert from './Alert'
 
 type FormProps = {
-  fetchWeather: () => void
+  fetchWeather: (search: SearchType) => Promise<void>
 }
 
 export default function Form({fetchWeather} : FormProps) {
@@ -33,7 +33,7 @@ export default function Form({fetchWeather} : FormProps) {
         }, 2000);
         return
       }
-      fetchWeather()
+      fetchWeather(search)
     }
   return (
     <>
